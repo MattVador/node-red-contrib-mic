@@ -14,7 +14,8 @@ module.exports = function(RED) {
 			'channels' : node.config.channels,
 			'device' : node.config.device,
 			'debug' : (node.config.debug == "true"),
-			'exitOnSilence' : node.config.silenceTimeout
+			'exitOnSilence' : node.config.silenceTimeout,
+			'fileType' : node.config.fileType
 		});
 		var micAudioStream = micInstance.getAudioStream();
 
