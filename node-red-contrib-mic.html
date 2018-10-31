@@ -18,7 +18,8 @@
 			silenceTimeout: {value: 0},
 			exitOnSilence: {value: false},
 			debug: {value: false},
-			active: {value: true}
+			active: {value: true},
+			fileType: {value:"raw"}
 		},
 		inputs:1,
 		outputs:1,
@@ -98,6 +99,14 @@
 	<div class="form-row">
 		<label for="node-input-silenceTimeout"><i class="icon-tag"></i>Silence timeout</label>
 		<input type="text" id="node-input-silenceTimeout" placeholder="0">
+	</div>
+	<div class="form-row">
+		<label for="node-input-fileType"><i class="icon-tag"></i> fileType</label>
+		<select id="node-input-fileType">
+			<option value="raw">raw</option>
+			<option value="mp3">mp3</option>
+			<option value="wav">wav</option>
+		</select>
 	</div>
 	<div class="form-row">
 		<label for="node-input-exitOnSilence"><i class="icon-tag"></i> Stop record on silence</label>

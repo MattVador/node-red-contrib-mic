@@ -34,6 +34,7 @@ The Mic node comprises the following options:
 * **Silence timeout**: The 'silence' signal is raised after reaching these many consecutive frames, default: `0`
 * **Stop record on silence**: `true` or `false` (useless with Silence timeout set to 0), default: `false`
 * **Debug**: `true` or `false` - can be used to help in debugging
+* **File type**: string defaults to `raw`, allows you to set a valid file type such as `mp3` or `wav` (for sox only).
 
 
 ## License
